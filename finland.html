@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finland</title>
+  <style>
+    html{
+      height: 100;
+    }
+
+    body {
+      display: flex;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      justify-content: center;
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 1rem;
+      grid-template-areas:  "t t t t"
+                            "p w w w"
+                            "g c v n";
+    }
+ 
+    h1 {
+      grid-area: t;
+      color: black;
+      text-align: center;
+    }
+
+    h2, p {
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+
+
+    .population {
+      grid-area: p;
+      background-image: url(/images/finland-8.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 1rem;
+      
+    }
+    
+    .welcome {
+      grid-area: w;
+      display: flex;
+      background-image: url(finland-8.jpg);
+      background-size: 1fr;
+    }
+
+    .gdp {
+      grid-area: g;
+      display: flex;
+      background-image: url(finland-8.jpg);
+      background-size: 1fr;
+    }
+
+    .code {
+      grid-area: c;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      border: 1px solid;
+      margin: 1em;
+      background-image: url(/Lab_3Finland_grid_flex/images/finland-8.jpg)
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .govt {
+      grid-area: v;
+      display: flex;
+      background-image: url(finland-8.jpg);
+      background-size: 1fr;
+    }
+
+    .news {
+      grid-area: n;
+      display: flex;
+      background-image: url(finland-8.jpg);
+      background-size: 1fr;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1 class="title">Finland</h1>
+
+    <div class="population grid-cell">
+        <h2>population: </h2>
+        <p>5,536,146</p>
+    </div>
+    
+    <div class="welcome grid-cell">
+      <h2>Welcome</h2>
+      <p>Natural Resources, Economic Initiatives, Community Spaces</p>
+    </div>
+
+    <div class="gdp grid-cell">
+      <h2>GDP</h2>
+      <p>257 billion</p>
+    </div>
+
+    <div class="code grid-cell">
+      <h2>Calling Code</h2>
+      <p>+ 358</p>
+    </div>
+
+    <div class="govt grid-cell">
+      <h2>Government</h2>
+      <p>Unitary parliamentary republic</p>
+    </div>
+
+    <div class="news grid-cell">
+      <h2>News</h2>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="name"/>
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="email"/>
+      <button>Send</button>
+    </div>
+
+  </div>
+  
+</body>
+</html>
